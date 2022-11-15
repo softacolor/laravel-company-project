@@ -1,0 +1,76 @@
+.circular_progress {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    padding: 60px;
+    margin: auto 0;
+  }
+  
+  @media (min-width: 420px) and (max-width: 659px) {
+    .circular_progress {
+      grid-template-columns: repeat(2, 160px);
+    }
+  }
+  
+  @media (min-width: 660px) and (max-width: 899px) {
+    .circular_progress {
+      grid-template-columns: repeat(3, 160px);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .circular_progress {
+      grid-template-columns: repeat(3, 160px);
+    }
+  }
+  
+  .circular_progress .box {
+    width: 100%;
+  }
+  
+  .circular_progress .box h2 {
+    display: block;
+    text-align: center;
+    color: #000;
+  }
+  
+  .circular_progress .box .chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 160px;
+    height: 160px;
+    color: #000;
+  }
+
+  .circular_progress .box .chart2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 160px;
+    height: 160px;
+    color: #000;
+  }
+
+  .circular_progress .box .chart3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 160px;
+    height: 160px;
+    color: #000;
+  }
+  
+  .circular_progress .box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    width: 100%;
+  }
