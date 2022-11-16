@@ -12,6 +12,7 @@
 				<th scope="col">Sub Title</th>
 				<th scope="col">Image</th>
 				<th scope="col">Description</th>
+				<th scope="col">Description1</th>
 				<th scope="col">Tags</th>
 				<th scope="col">Action</th>
 				
@@ -28,6 +29,7 @@
 				<td>{{ $item->subtitle}}</td>
 				<td>{{ $item->image}}</td>
 				<td>{{ $item->description}}</td>
+				<td>{{ $item->description1}}</td>
 				<td>{{ $item->tags}}</td>
 				<td style="text-align: center">
 					<a href="{{ route('edit_post',$item->id)}}" class="btn btn-info">Edit</a>

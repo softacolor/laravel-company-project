@@ -79,6 +79,9 @@ Route::get('/edit-post/{id}', [AdminController::class,'editpost'])->name('edit_p
 Route::post('/update-post/{id}', [AdminController::class,'updatepost'])->name('update_post');
 Route::get('/delete-post/{id}', [AdminController::class,'deletepost'])->name('delete_post');
 
+// single post
+
+Route::get('/view/post/{id}', [AdminController::class,'single_post']);
 
 
 

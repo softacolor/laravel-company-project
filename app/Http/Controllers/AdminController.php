@@ -214,6 +214,7 @@ class AdminController extends Controller
            $data['subtitle'] = $request->subtitle;
            $data['tags'] = $request->tags;
            $data['description'] = $request->description;
+           $data['description1'] = $request->description1;
            $data['post_date'] = date('d-m-Y');
            $data['post_month'] = date("F");
     
@@ -256,6 +257,7 @@ class AdminController extends Controller
         $data['subtitle'] = $request->subtitle;
         $data['tags'] = $request->tags;
         $data['description'] = $request->description;
+        $data['description1'] = $request->description1;
         $data['post_date'] = date('d-m-Y');
         $data['post_month'] = date("F");
 
@@ -298,6 +300,17 @@ class AdminController extends Controller
     return Redirect()->route('allpost')->with($note);
     
 }
+
+    public function single_post($id){
+
+        $post = DB::table('posts')
+        ->join('categories','posts.category_id','categories.id')
+        ->join('users','posts.user_id','users.id')
+        ->select('posts.*','categories.category','users.name')
+        ->where('posts.id',$id)->first();
+        return view('post.singlepost',compact('post'));
+
+    }
 
 
 

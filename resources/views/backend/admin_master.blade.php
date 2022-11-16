@@ -501,6 +501,11 @@
         height: 250
     });
 </script>
+<script type="text/javascript">
+  $('#summernote1').summernote({
+      height: 250
+  });
+</script>
 
 
 

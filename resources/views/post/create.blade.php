@@ -35,6 +35,10 @@
 				<label for="exampleFormControlTextarea1">Description</label>
 				<textarea class="form-control" name="description" id="summernote" rows="3"></textarea>
 			</div>
+			<div class="form-group">
+				<label for="exampleFormControlTextarea1">Description1</label>
+				<textarea class="form-control" name="description1" id="summernote1" rows="3"></textarea>
+			</div>
 
 			<div class="form-group">
 				<label for="exampleFormControlPassword">Tags</label>

@@ -461,7 +461,7 @@
                 </div>
             </div>
             @php
-                $post = DB::table('posts')->orderBy('id','desc')->get();
+                $post = DB::table('posts')->orderBy('id','desc')->limit(3)->get();
             @endphp
             <div class="blog_post_aria">
                 <div class="row justify-content-center">
@@ -478,7 +478,7 @@
                                 {{-- <a href="blog-single.html" class="category">Travel</a> --}}
                             </div>
                             <div class="blog_content">
-                                <h3><a href="blog-single.html">
+                                <h3><a href="{{URL::to('view/post/'.$item->id)}}">
                                 {{$item->title}}    
                                 </a></h3>
                                 <div class="blog_bottom">

@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('subtitle');
             $table->string('image');
             $table->text('description');
+            $table->text('description1');
             $table->string('tags')->nullable();
             $table->string('post_date')->nullable();
             $table->string('post_month')->nullable();
